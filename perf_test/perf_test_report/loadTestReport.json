@@ -1,6 +1,6 @@
 {
-    "date": "2025-03-07",
-    "time": "00:58:54",
+    "date": "2025-03-10",
+    "time": "00:49:09",
     "load_samples": [
         "65_samples",
         "120k_samples",
@@ -23,21 +23,21 @@
         },
         "120k_samples": {
             "train": {
-                "time_taken_minutes": 1.52,
+                "time_taken_minutes": 1.55,
                 "status": "success"
             },
             "match": {
-                "time_taken_minutes": 5.37,
+                "time_taken_minutes": 5.47,
                 "status": "success"
             }
         },
         "5m_samples": {
             "train": {
-                "time_taken_minutes": 1.98,
+                "time_taken_minutes": 2.06,
                 "status": "success"
             },
             "match": {
-                "time_taken_minutes": 54.93,
+                "time_taken_minutes": 55.11,
                 "status": "success"
             }
         }
