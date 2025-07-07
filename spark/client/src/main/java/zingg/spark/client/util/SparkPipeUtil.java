@@ -7,13 +7,11 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
 import zingg.common.client.ZFrame;
-//import zingg.common.client.pipe.InMemoryPipe;
 import zingg.common.client.util.DFReader;
 import zingg.common.client.util.DFWriter;
 import zingg.common.client.util.PipeUtil;
 import zingg.spark.client.SparkFrame;
 import org.apache.spark.sql.SparkSession;
-
 
 //import com.datastax.spark.connector.cql.*;
 //import org.elasticsearch.spark.sql.api.java.JavaEsSparkSQL;
@@ -21,9 +19,7 @@ import org.apache.spark.sql.SparkSession;
 
 public class SparkPipeUtil extends PipeUtil<SparkSession, Dataset<Row>, Row, Column>{
 
-	
 	public  final Log LOG = LogFactory.getLog(SparkPipeUtil.class);
-	//private SparkDFReader reader;
 	
 	public SparkPipeUtil(SparkSession spark) {
 		super(spark);
@@ -47,7 +43,6 @@ public class SparkPipeUtil extends PipeUtil<SparkSession, Dataset<Row>, Row, Col
 		return new SparkDFWriter(toWrite);
 	}
 
-	
 	public ZFrame<Dataset<Row>, Row, Column> addLineNo (ZFrame<Dataset<Row>, Row, Column> input) {
 		return new SparkFrame(new SparkDSUtil(getSession()).addRowNumber(input).df());
 
@@ -55,8 +50,6 @@ public class SparkPipeUtil extends PipeUtil<SparkSession, Dataset<Row>, Row, Col
 
 	public ZFrame<Dataset<Row>, Row, Column> getZFrame(ZFrame<Dataset<Row>, Row, Column> z) {
 		return new SparkFrame(z.df());
-	}
-
-	
+	}	
 	
 }

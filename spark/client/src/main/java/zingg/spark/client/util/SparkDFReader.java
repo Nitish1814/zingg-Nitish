@@ -14,8 +14,8 @@ import org.apache.spark.sql.SparkSession;
 
 public class SparkDFReader implements DFReader<Dataset<Row>, Row, Column> {
     
-    private SparkSession session;
-    private DataFrameReader reader;
+    protected SparkSession session;
+    protected DataFrameReader reader;
 
     public SparkDFReader(SparkSession s) {
         this.session = s;
@@ -25,8 +25,6 @@ public class SparkDFReader implements DFReader<Dataset<Row>, Row, Column> {
     public DFReader<Dataset<Row>, Row, Column> getReader() {
         return this;
     }
-
-    
 
     public DFReader<Dataset<Row>, Row, Column> format(String f) {
         this.reader.format(f);
