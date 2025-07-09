@@ -1,0 +1,35 @@
+name: Dispatch to Multiple Branches
+
+on:
+  push:
+    paths:
+      - 'perf/**' # Trigger only when files in the 'files/' folder are changed
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        branch: [main]
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v3
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Clone target repository
+        run: |
+          git clone --branch ${{ matrix.branch }} https://x-access-token:${{ secrets.GH_PAT }}@github.com/Nitish1814/zinggEnterprise.git target-repo
+
+      - name: Copy files to target repo
+        run: |
+          cp -r perf/readme.md target-repo/perf/
+          cd target-repo
+          git add .
+          git commit -m "Sync from source repo to ${{ matrix.branch }}" || echo "No changes to commit"
+          git push origin ${{ matrix.branch }}
