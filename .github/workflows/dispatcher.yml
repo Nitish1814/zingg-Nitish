@@ -28,7 +28,7 @@ jobs:
 
       - name: Copy files to target repo
         run: |
-          cp -r perf/readme.md target-repo/perf/
+          cp -r perf/readme.md target-repo/
           cd target-repo
           git add .
           git commit -m "Sync from source repo to ${{ matrix.branch }}" || echo "No changes to commit"
