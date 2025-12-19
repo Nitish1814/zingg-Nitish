@@ -1,9 +1,9 @@
 {
-    "date": "2025-12-16",
-    "time": "04:01:08",
+    "date": "2025-12-19",
+    "time": "04:00:39",
     "test": "ncVoters_5M",
     "results": {
-        "train": 1.86,
-        "match": 55.17
+        "train": 1.85,
+        "match": 55.15
     }
 }
