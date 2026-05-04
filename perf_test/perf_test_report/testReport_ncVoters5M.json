@@ -1,9 +1,9 @@
 {
-    "date": "2026-05-01",
-    "time": "06:20:04",
+    "date": "2026-05-04",
+    "time": "06:17:13",
     "test": "ncVoters_5M",
     "results": {
-        "train": 2.0,
-        "match": 58.59
+        "train": 1.97,
+        "match": 54.0
     }
 }
