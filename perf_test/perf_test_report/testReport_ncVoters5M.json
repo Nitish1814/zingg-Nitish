@@ -1,18 +1,18 @@
 {
-    "date": "2026-08-10",
-    "time": "04:32:06",
+    "date": "2026-08-13",
+    "time": "04:53:51",
     "test": "ncVoters_5M",
     "results": {
         "train": 1.93,
-        "match": 57.81
+        "match": 49.63
     },
     "pcSpecs": {
-        "OS": "Linux 6.17.0-1020-azure",
+        "OS": "Linux 6.17.0-1022-azure",
         "CPU": "x86_64 \u00b7 4 cores",
         "RAM": "16 GB",
         "Storage": "144 GB",
         "Spark": "/___/ .__/\\_,_/_/ /_/\\_\\   version 3.5.5",
-        "Java": "openjdk version 11.0.31 2026-04-21"
+        "Java": "openjdk version 11.0.32 2026-07-21"
     },
     "dataSpecs": {}
 }
