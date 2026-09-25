@@ -1,10 +1,10 @@
 {
-    "date": "2026-09-22",
-    "time": "09:20:53",
+    "date": "2026-09-25",
+    "time": "09:47:36",
     "test": "ncVoters_5M",
     "results": {
-        "train": 1.9,
-        "match": 48.81
+        "train": 1.92,
+        "match": 55.75
     },
     "pcSpecs": {
         "OS": "Linux 6.17.0-1022-azure",
@@ -12,7 +12,7 @@
         "RAM": "16 GB",
         "Storage": "144 GB",
         "Spark": "/___/ .__/\\_,_/_/ /_/\\_\\   version 3.5.5",
-        "Java": "openjdk version 11.0.32 2026-07-21"
+        "Java": "openjdk version 11.0.32.1 2026-08-18"
     },
     "dataSpecs": {}
 }
