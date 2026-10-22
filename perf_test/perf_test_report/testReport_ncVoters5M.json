@@ -1,13 +1,13 @@
 {
-    "date": "2026-10-19",
-    "time": "11:14:34",
+    "date": "2026-10-22",
+    "time": "09:26:35",
     "test": "ncVoters_5M",
     "results": {
-        "train": 1.56,
-        "match": 32.77
+        "train": 1.32,
+        "match": 33.19
     },
     "pcSpecs": {
-        "OS": "Linux 6.17.0-1022-azure",
+        "OS": "Linux 7.0.0-1017-azure",
         "CPU": "x86_64 \u00b7 4 cores",
         "RAM": "16 GB",
         "Storage": "144 GB",
